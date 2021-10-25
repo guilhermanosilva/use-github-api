@@ -1,4 +1,7 @@
 # Explorando a comunicação frontend com API do Github
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05c50ae0-7e74-4577-b928-86980d6006dd/deploy-status)](https://app.netlify.com/sites/use-github-api/deploys)
+
+> [ACESSAR](https://use-github-api.netlify.app/) PROJETO ONLINE
 
 ## Atividade
 
