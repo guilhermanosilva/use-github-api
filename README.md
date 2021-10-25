@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Explorando a comunicação frontend com API do Github
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Atividade
 
-## Available Scripts
+* Utilizando a API do github, desenvolva uma tela que exibirá uma lista de
+usuários do GitHub, contendo seu Id e Login.
 
-In the project directory, you can run:
+* A partir da listagem feita no exercício anterior, elabore uma tela que mostre os
+detalhes de um usuário específico, contendo seu Id, Login, URL do perfil e Data de
+cadastro.
 
-### `yarn start`
+* Juntamente com a tela de detalhamentos de usuário, exiba em uma tabela os
+repositórios públicos do usuário, contendo Id, Nome e URL do repositório.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Recuros utilizados
+* React.Js com Javascript
+* Styled-components para estilização
+* Hook customizado facilitar o acesso ao contexto da API do github
+* Context API para globalizar as requisições feitas à API do github
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Como rodar a aplicação
+* Fazer o clone do projeto para o seu computador
+* Executar o script `yarn` para instalar todas as dependências do projeto
+* Executar o script `yarn start` para rodar a aplicação
+* Ao iniciar, o APP irá exibir uma lista dos 10 primeiros usuários retornados da api [`https://api.github.com/users`](https://api.github.com/users)
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Funções
+* Carrega a lista dos usuários do github
+* Exibe uma modal com informações filtradas de um usuário quando clicando em seu nome
+* Exibe a lista dos repositórios públicos do usuários selecionando a clicar no botão
